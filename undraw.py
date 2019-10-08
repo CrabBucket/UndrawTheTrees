@@ -14,11 +14,16 @@ class Node:
         self.end = end
 
 inputCount = int(input())
-for x in range(inputCount):
+
+def getTreeInput():
     currentInput = ""
     values = []
     while currentInput != "#":
         currentInput = input()
         values.append(currentInput)
     
-    print(values)
+    return values
+
+
+for x in range(inputCount):
+    tree = getTreeInput()
